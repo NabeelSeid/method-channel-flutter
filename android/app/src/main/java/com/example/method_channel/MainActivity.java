@@ -46,7 +46,7 @@ public class MainActivity extends FlutterActivity {
 
   private void runUssd(String ussdCode) {
     String encodedHash = Uri.encode("#");
-    String ussd = "*804" + ussdCode;
-    startActivityForResult(new Intent("android.intent.action.CALL", Uri.parse("tel:" + encodedHash)), 1);
+    String ussd = "*" + ussdCode + encodedHash;
+    startActivityForResult(new Intent("android.intent.action.CALL", Uri.parse("tel:" + ussd)), 1);
   }
 }
