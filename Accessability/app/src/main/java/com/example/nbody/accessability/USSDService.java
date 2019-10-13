@@ -1,4 +1,4 @@
-package com.example.method_channel;
+package com.example.nbody.accessability;
 
 import android.accessibilityservice.AccessibilityService;
 import android.accessibilityservice.AccessibilityServiceInfo;
